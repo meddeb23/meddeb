@@ -14,7 +14,10 @@ function App() {
         <main className="max-w-2xl mx-auto p-4 ">
           <Hero />
           <About />
-          <div className="flex flex-col gap-10 justify-center items-center">
+          <div
+            id="projects"
+            className="flex flex-col gap-10 justify-center items-center"
+          >
             <h1 className="xl-title">Projects</h1>
             <div
               className="flex flex-col gap-10
@@ -60,7 +63,7 @@ function App() {
 
 function Hero() {
   return (
-    <section>
+    <section id="home">
       <NavBar />
       <div className="flex flex-col gap-4 sm:gap-6 lg:gap-10">
         <h1 className="xl-title">👋 Hello,</h1>
@@ -76,7 +79,7 @@ function Hero() {
 
 function About() {
   return (
-    <section className="px-4">
+    <section id="about" className="px-4">
       <p className="font-semibold text-xl sm:text:3xl">
         I’m a software engineer student/freelancer specializing in building (and
         occasionally designing) exceptional digital experiences.
@@ -87,7 +90,7 @@ function About() {
 
 function Contact() {
   return (
-    <section className="">
+    <section id="contact">
       <h1 className="xl-title">ARE YOU MINDING A PROJECT?</h1>
       <a
         href="mailto:meddeb2468@gmail.com"
